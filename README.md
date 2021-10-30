@@ -30,7 +30,7 @@ status of a server
 
 Is there a way to manage CSS with variables and functions? 
 
-		Yes, CSS has variables and functions, you can also create a PHP file 		and define the headers as CSS, using PHP functions and variables 
+		Yes, CSS has variables and functions, you can also create a PHP file and define the headers as CSS, using PHP functions and variables 
 
 Review and update the following erroneous CSS: 
 
@@ -78,45 +78,45 @@ Review and update the following erroneous CSS:
 
  
 
-.button, input[type="submit"], button {  
+    .button, input[type="submit"], button {  
 
-    position: relative;  
+        position: relative;  
 
-    display: inline-block;  
+        display: inline-block;  
 
-    padding: 0;  
+        padding: 0;  
 
-    margin: 0;  
+        margin: 0;  
 
-    border: none;  
+        border: none;  
 
-    text-decoration: none;  
+        text-decoration: none;  
 
-    text-align: center;  
+        text-align: center;  
 
-    white-space: nowrap;  
+        white-space: nowrap;  
 
-    overflow: visible;  
+        overflow: visible;  
 
-    background-color: red;  
+        background-color: red;  
 
-    text-transform: uppercase; 
+        text-transform: uppercase; 
 
-    color: #ffffff;  
+        color: #ffffff;  
 
-    font-size: 18px;  
+        font-size: 18px;  
 
-    font-family: 'FuturaBT-Book';  
+        font-family: 'FuturaBT-Book';  
 
-    line-height: 20px;  
+        line-height: 20px;  
 
-    height: 20px;  
+        height: 20px;  
 
-    -webkit-transition: color 0.2s ease-in-out;  
+        -webkit-transition: color 0.2s ease-in-out;  
 
-    transition: color 0.2s ease-in-out; 
+        transition: color 0.2s ease-in-out; 
 
-} 
+    } 
 
  
 
@@ -150,58 +150,33 @@ var car = new Car();
 
 Explain what AJAX is and it’s advantages/disadvantages. 
 
-	Advantage 
+	Advantage
 
-		 
-		Better user experience, Ajax allows pages to be modified without  
+		Better user experience, Ajax allows pages to be modified withoutreloading.  
+        Resource optimization, by not reloading the page, the time involved in each transaction is reduced.  
+        Less bandwidth usage.  
+        High compatibility, Ajax is supported by almost all web platforms. 
 
-reloading.  
+    Disadvantage 
 
-Resource optimization, by not reloading the page, the time involved  
-
-in  
-
-each transaction is reduced.  
-
-Less bandwidth usage.  
-
-High compatibility, Ajax is supported by almost all web platforms. 
-
- 
-
-Disadvantage 
-
-	 
-
-	SEO problems, search engines have difficulty analyzing code written 	in  
-
-JavaScript. The fact that no new URLs are generated with Ajax  
-
-removes  
-
-an important ranking factor. 
-
-The user may lose the ability to use the browser's back and forward  
-
-buttons or add a page to favorites. 
-
-In functionalities such as a chat, it would consume too many server  
-
-resources by making infinite requests in very short periods of time. 
+        SEO problems, search engines have difficulty analyzing code written in  
+        JavaScript, the fact that no new URLs are generated with Ajax removes an important ranking factor. 
+        The user may lose the ability to use the browser's back and forward buttons or add a page to favorites. 
+        In functionalities such as a chat, it would consume too many server resources by making infinite requests in very short periods of time. 
 
  
 
 Describe how event bubbling works in the context of clicking on the “Hello World” text: 
 
-<body> 
+    <body> 
 
-   <div id=”container”> 
+       <div id=”container”> 
 
-       <span id=”textContainer”>Hello World</span> 
+           <span id=”textContainer”>Hello World</span> 
 
-   </div> 
+       </div> 
 
-</body> 
+    </body> 
 
  
 
