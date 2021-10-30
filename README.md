@@ -1,7 +1,5 @@
 # Twig
 
-Knowledge test
-
 Evaluación – Fullstack 
 
 Code Challenge 
