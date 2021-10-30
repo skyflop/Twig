@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twig</title>
+    </head>
+    <style>
+        .container {
+            max-width: 30em;
+            margin: auto;
+            text-align: center;
+            padding-top: 6em;
+        }
+    </style>
+    <body>
+        <!-- You can switch Admin or Player mode template -->
+        <div id="template" data-template="Admin"></div>
+        <section>
+            <div class="container">
+                <h1 id="loginHeaderText"></h1>
+                 <form action="">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" placeholder="Username">
+                    <br>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password">
+                    <br>
+
+                    <div id="submitButtonHTML"></div>
+                </form>
+                <p id="totalSiteLogins"></p>
+            </div>
+        </section>
+        <script>
+            var submitButtonHTML = '<input type="submit" value="Log In">';
+            var loginHeaderText = 'Log In';
+            var totalSiteLogins = 0.00;
+            var Integer = parseInt(totalSiteLogins, 10);
+            if( document.getElementById("template") ) {
+                var Template = document.getElementById("template").dataset.template;
+                if( Template == "Admin" ) {
+                    var isAdminLogin = true;
+                    var Admin = "ADMIN ";
+                } else if( Template == "Player" ) {
+                    var isAdminLogin = false;
+                    var Admin = "";
+                }
+            } else {
+                var isAdminLogin = false;
+                var Admin = "";
+            }
+            document.getElementById("totalSiteLogins").innerHTML = "Total Site Logins: " + totalSiteLogins;
+            document.getElementById("loginHeaderText").innerHTML = Admin + loginHeaderText;
+            document.getElementById("submitButtonHTML").innerHTML = submitButtonHTML;
+        </script>
+    </body> 
+</html>
