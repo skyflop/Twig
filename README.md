@@ -168,11 +168,11 @@ Explain what AJAX is and it’s advantages/disadvantages.
 
 Describe how event bubbling works in the context of clicking on the “Hello World” text: 
 
-<body> 
-   <div id=”container”> 
-       <span id=”textContainer”>Hello World</span> 
-   </div> 
-</body> 
+    <body> 
+       <div id=”container”> 
+           <span id=”textContainer”>Hello World</span> 
+       </div> 
+    </body> 
 
  
 
@@ -266,33 +266,33 @@ function getHeaderElement() {
 
  
 
-/**  
+        /**  
 
-* Returns the header element.  
+        * Returns the header element.  
 
-*  
+        *  
 
-* @return {(object|null)} The JQuery header element or null if the element does not exist  
+        * @return {(object|null)} The JQuery header element or null if the element does not exist  
 
-*/  
+        */  
 
-function getHeaderElement() {  
+        function getHeaderElement() {  
 
-    // Get header element by its id.      
+            // Get header element by its id.      
 
-    header = $("myHeader");  
+            header = $("myHeader");  
 
-    if (header === null  && typeof header === 'undefined' ) {  
+            if (header === null  && typeof header === 'undefined' ) {  
 
-        console.log("header element exists!");  
+                console.log("header element exists!");  
 
-    }  
+            }  
 
-    console.log("header element does not exist!"); 
+            console.log("header element does not exist!"); 
 
-    return header  
+            return header  
 
-} 
+        } 
 
  
 
