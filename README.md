@@ -168,21 +168,15 @@ Explain what AJAX is and it’s advantages/disadvantages.
 
 Describe how event bubbling works in the context of clicking on the “Hello World” text: 
 
-    <body> 
-
-       <div id=”container”> 
-
-           <span id=”textContainer”>Hello World</span> 
-
-       </div> 
-
-    </body> 
+<body> 
+   <div id=”container”> 
+       <span id=”textContainer”>Hello World</span> 
+   </div> 
+</body> 
 
  
 
-	The events are propagated from the innermost element, through the  
-
-parents, so clicking on the text "Hello World" would first trigger the click on 	the <span> tag, then on the <div> tag and finally in the <body> tag 
+	The events are propagated from the innermost element, through the parents, so clicking on the text "Hello World" would first trigger the click on 	the <span> tag, then on the <div> tag and finally in the <body> tag 
 
  
 
